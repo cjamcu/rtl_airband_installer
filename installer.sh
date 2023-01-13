@@ -4,7 +4,7 @@
 rtl_airband_version=4.0.3
 
 
-# Global dependency 
+# Global dependency   for WSL 
 sudo apt install usbip hwdata usbutils
 
 # Install dependency
