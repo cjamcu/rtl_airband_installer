@@ -1,11 +1,8 @@
-
 #!/bin/bash 
-
 rtl_airband_version=4.0.3
 
-
-# Global dependency   for WSL 
-sudo apt install usbip hwdata usbutils
+# Global dependency 
+sudo apt install  --assume-yes usbip hwdata usbutils
 
 # Install dependency
 sudo apt update && sudo apt full-upgrade
@@ -19,3 +16,6 @@ sudo apt-get install --assume-yes wget
 wget -O RTLSDR-Airband-X.Y.Z.tar.gz "https://github.com/charlie-foxtrot/RTLSDR-Airband/archive/refs/tags/v$rtl_airband_version.tar.gz" && tar xvfz RTLSDR-Airband-X.Y.Z.tar.gz 
 
 cd "RTLSDR-Airband-$rtl_airband_version" && mkdir build && cd build && cmake ../ && make && sudo make install
+
+
+
