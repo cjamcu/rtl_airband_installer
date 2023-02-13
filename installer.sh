@@ -5,7 +5,7 @@ rtl_airband_version=4.0.3
 apt install  --assume-yes usbip hwdata usbutils
 
 # Install dependency
-apt update && sudo apt full-upgrade
+apt update &&  apt full-upgrade
 apt-get install --assume-yes build-essential cmake pkg-config libmp3lame-dev libshout3-dev libconfig++-dev
 apt-get install --assume-yes libraspberrypi-dev
 apt-get install --assume-yes libfftw3-dev
