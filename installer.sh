@@ -15,7 +15,7 @@ apt-get install --assume-yes wget
 # Compile rtl_airband
 wget -O RTLSDR-Airband-X.Y.Z.tar.gz "https://github.com/charlie-foxtrot/RTLSDR-Airband/archive/refs/tags/v$rtl_airband_version.tar.gz" && tar xvfz RTLSDR-Airband-X.Y.Z.tar.gz 
 
-cd "RTLSDR-Airband-$rtl_airband_version" && mkdir build && cd build && cmake ../ && make && sudo make install
+cd "RTLSDR-Airband-$rtl_airband_version" && mkdir build && cd build && cmake ../ && make &&  make install
 
 
 
