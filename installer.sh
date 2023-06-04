@@ -1,5 +1,5 @@
 #!/bin/bash 
-rtl_airband_version=4.0.3
+rtl_airband_version=4.1.1
 
 # Global dependency 
 apt install  --assume-yes usbip hwdata usbutils
